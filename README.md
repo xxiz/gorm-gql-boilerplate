@@ -1,4 +1,11 @@
 ## Overview
+### About
+This project is a boilerplate for setting up GoLang servers w/ ORM + GQL
+### Stack
+- [gin](https://github.com/gin-gonic/gin) - http framework
+- [gqlgen](https://gqlgen.com/) - gql server
+- [gorm](https://gorm.io/) - orm
+### Files
 - `config/config.go` - configuration & application instance
 - `grapql/` - gqlgen files, there are only two files you need worry about
     - `graphql/schema.graphqls` - this is where you define your models, mutations, query functions
