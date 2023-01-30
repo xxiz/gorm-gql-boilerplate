@@ -28,16 +28,13 @@ go run github.com/cespare/reflex -r '\.go$' -s -- sh -c 'dlv debug --headless --
 ```
 alternatively you can build and run via `run.bat` or `run.sh`
 
-## Useful 
-# USEFUL COMMANDS
-## Re-Generate graqphl schema
+## Useful Commands
 ```bash
+# re-generate graphql schema
 go generate ./...
-```
-or 
-```bash
+# or 
 go run github.com/99designs/gqlgen
 ```
 
-### Author
+### Written by
 [KaiserBH](https://github.com/KaiserBh)
