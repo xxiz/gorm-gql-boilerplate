@@ -36,5 +36,5 @@ go generate ./...
 go run github.com/99designs/gqlgen
 ```
 
-### Written by
+### Original Author
 [KaiserBH](https://github.com/KaiserBh)
