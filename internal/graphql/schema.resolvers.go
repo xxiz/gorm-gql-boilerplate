@@ -9,6 +9,7 @@ import (
 	"fmt"
 
 	"github.com/hhelix/baulkham/internal/graphql/model"
+	"github.com/hhelix/baulkham/internal/models"
 )
 
 // CreateTodo is the resolver for the createTodo field.
@@ -21,11 +22,20 @@ func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
 	panic(fmt.Errorf("not implemented: Todos - todos"))
 }
 
+// Name is the resolver for the name field.
+func (r *userResolver) Name(ctx context.Context, obj *models.User) (string, error) {
+	panic(fmt.Errorf("not implemented: Name - name"))
+}
+
 // Mutation returns MutationResolver implementation.
 func (r *Resolver) Mutation() MutationResolver { return &mutationResolver{r} }
 
 // Query returns QueryResolver implementation.
 func (r *Resolver) Query() QueryResolver { return &queryResolver{r} }
 
+// User returns UserResolver implementation.
+func (r *Resolver) User() UserResolver { return &userResolver{r} }
+
 type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
+type userResolver struct{ *Resolver }
